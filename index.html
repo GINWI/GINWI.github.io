@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealer</title>
+    <!-- FONT DEFAULT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jaro:opsz@6..72&family=League+Spartan:wght@100..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <!-- FONT KHUSUS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jaro:opsz@6..72&family=Jersey+25&family=League+Spartan:wght@100..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Car Dealer</h2>
+                <p class="sub-heading">Car & Motorcycle</p>
+            </div>
+            <div class="feature feature-1">
+                <h4 class="price">IDR 2T</h4>
+                <p class="item">BMW 4</p>
+            </div>
+            <div class="feature feature-2">
+                <h4 class="price">IDR 5T</h4>
+                <p class="item">BMW M760i xDrive</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Car Dealer</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+        <section class="services">
+            <div class="service">
+                <div class="icon">🛞</div>
+                <h3>Vehicle Service</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet quis maiores tempora unde maxime.</p>
+            </div>
+            <div class="service">
+                <div class="icon">🚘</div>
+                <h3>Car</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet quis maiores tempora unde maxime.</p>
+            </div>
+            <div class="service">
+                <div class="icon">🏍</div>
+                <h3>Motorcycle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet quis maiores tempora unde maxime.</p>
+            </div>
+            <div class="service">
+                <div class="icon">🚚</div>
+                <h3>Bus</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet quis maiores tempora unde maxime.</p>
+            </div>
+            <div class="service">
+                <div class="icon">⛽</div>
+                <h3>Gas Station</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla amet quis maiores tempora unde maxime.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Galley</h2>
+            <img src="https://source.unsplash.com/random/200x200" alt="">
+            <img src="https://source.unsplash.com/random/201x200" alt="">
+            <img src="https://source.unsplash.com/random/200x201" alt="">
+            <img src="https://source.unsplash.com/random/202x200" alt="">
+            <img src="https://source.unsplash.com/random/200x202" alt="">
+            <img src="https://source.unsplash.com/random/203x200" alt="">
+            <img src="https://source.unsplash.com/random/200x198" alt="">
+            <img src="https://source.unsplash.com/random/198x200" alt="">
+            <img src="https://source.unsplash.com/random/200x199" alt="">
+            <img src="https://source.unsplash.com/random/199x200" alt="">
+        </section>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+
+</html>
